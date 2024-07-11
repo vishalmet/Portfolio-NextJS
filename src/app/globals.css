@@ -31,3 +31,21 @@ body {
     text-wrap: balance;
   }
 }
+
+@font-face {
+  font-family: 'Brandy';
+  src: url('/fonts/Brandy.ttf') format('truetype');
+}
+
+.brandy-font {
+  font-family: 'Brandy';
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+.bricolage-font {
+  font-family: "Bricolage Grotesque", sans-serif;;
+}
+
