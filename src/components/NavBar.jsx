@@ -12,8 +12,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-transparent top-0 z-10 w-full fixed backdrop-filter backdrop-blur-lg bg-opacity-20 p-2 brandy-font ">
-      <div className="container mx-auto flex justify-between items-center">
+    <nav className="bg-transparent top-0 z-10 w-full fixed backdrop-filter backdrop-blur-lg bg-opacity-20">
+      <div className="container mx-auto flex justify-between items-center p-2">
         <div className="text-white brandy-font text-4xl">
           <Link className=' flex items-center'  href="/">
             <Image className=' h-16 w-16' src={Logo}></Image>
@@ -44,23 +44,24 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
-        <div className="hidden lg:flex lg:items-center lg:justify-end w-full">
-          <Link href="/" className="block mt-4 lg:mt-0 text-white hover:text-gray-400 mx-4">
+        <div className="hidden bricolage-font text-xl lg:flex lg:items-center lg:justify-end w-full">
+          <Link href="/" className="py-1 px-1 mx-1 md:py-3 md:px-3 md:mx-3 flex-wrap hover:border-b-2 hover:border-white  hover:bg-gradient-to-t from-pink-500 via-red-500 to-yellow-500 hover:rounded-md cursor-pointer">
             Home
           </Link>
-          <Link href="/about" className="block mt-4 lg:mt-0 text-white hover:text-gray-400 mx-4">
+          <Link href="/about" className="py-1 px-1 mx-1 md:py-3 md:px-3 md:mx-3 flex-wrap hover:border-b-2 hover:border-white  hover:bg-gradient-to-t from-pink-500 via-red-500 to-yellow-500 hover:rounded-md cursor-pointer">
             About
           </Link>
-          <Link href="/services" className="block mt-4 lg:mt-0 text-white hover:text-gray-400 mx-4">
+          <Link href="/services" className="py-1 px-1 mx-1 md:py-3 md:px-3 md:mx-3 flex-wrap hover:border-b-2 hover:border-white  hover:bg-gradient-to-t from-pink-500 via-red-500 to-yellow-500 hover:rounded-md cursor-pointer">
             Services
           </Link>
-          <Link href="/contact" className="block mt-4 lg:mt-0 text-white hover:text-gray-400 mx-4">
+          <Link href="/contact" className="py-1 px-1 mx-1 md:py-3 md:px-3 md:mx-3 flex-wrap hover:border-b-2 hover:border-white  hover:bg-gradient-to-t from-pink-500 via-red-500 to-yellow-500 hover:rounded-md cursor-pointer">
             Contact
           </Link>
         </div>
       </div>
       {isOpen && (
-        <div className="lg:hidden absolute top-full left-0 right-0 bg-gray-800 z-50">
+        <div className="lg:hidden flex justify-center">
+        <div className="w-full bg-transparent shadow-lg lg:backdrop-brightness-110 z-50">
           <Link href="/" className="block px-4 py-2 text-center text-white hover:bg-gray-700">
             Home
           </Link>
@@ -73,6 +74,7 @@ const Navbar = () => {
           <Link href="/contact" className="block px-4 py-2 text-center text-white hover:bg-gray-700">
             Contact
           </Link>
+        </div>
         </div>
       )}
     </nav>
