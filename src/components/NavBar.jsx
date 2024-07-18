@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <div className="mt-4 relative">
-      <nav className="bg-gray-950 border-2 border-white rounded-full mx-1 md:mx-10 lg:mx-32 flex-wrap bricolage-font">
+      <nav className="bg-transparent backdrop-filter backdrop-blur-2xl shadow-xl rounded-full mx-1 md:mx-10 lg:mx-32 flex-wrap bricolage-font">
         <div className="container mx-auto flex justify-between items-center p-2">
           <div className="flex lg:hidden text-white brandy-font text-2xl">
             <Link className="flex items-center" href="/">
