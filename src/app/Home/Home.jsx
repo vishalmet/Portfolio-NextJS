@@ -8,30 +8,14 @@ import About from "@/components/About";
 const Home = () => {
   return (
     <div className=" bricolage-font text-white overflow-x-hidden">
-      <GradientBackground>
-        <div className="">
+      <GradientBackground >
+        <div className=" pb-16 md:pb-0">
           <Navbar />
-          <div className=" pt-16 items-center text-center mx-6 md:mx-14">
+          <div className=" pt-16 items-center text-center  mx-6 md:mx-14">
 
             <div className=" flex justify-center lg:hidden items-center text-white">
-              <div className=" space-y-24">
-                <p className=" bg-gradient-to-t from-pink-500 via-red-400 to-yellow-500 border-2 border-white p-1 text-xs rounded -rotate-45">
-                  Frontend Dev
-                </p>
-                <p className="bg-gradient-to-t from-pink-500 via-red-400 to-yellow-500 border-2 border-white p-1 text-xs rounded rotate-45">
-                  Web3 Enthusiast
-                </p>
-              </div>
               <div className="flex justify-center lg:hidden ">
-                <Image className=" h-[250px] w-[350px]" src={Me}></Image>
-              </div>
-              <div className=" space-y-24">
-                <p className="  bg-gradient-to-t from-pink-500 via-red-400 to-yellow-500 border-2 border-white p-1 text-xs rounded rotate-45">
-                  Social Media Manager
-                </p>
-                <p className="bg-gradient-to-t from-pink-500 via-red-400 to-yellow-500 border-2 border-white p-1 text-xs rounded -rotate-45">
-                  Software Engineer
-                </p>
+                <Image className=" h-[250px] w-[300px]" src={Me}></Image>
               </div>
             </div>
 
@@ -71,8 +55,8 @@ const Home = () => {
           </div>
         </div>
       </GradientBackground>
+
       <div className="">
-        
         <About />
       </div>
     </div>
