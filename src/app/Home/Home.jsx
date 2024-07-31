@@ -3,10 +3,11 @@ import Navbar from "@/components/NavBar";
 import TypeWriting from "@/components/TypeWriting";
 import Image from "next/image";
 import Me from "../../assets/me.png";
+import About from "@/components/About";
 
 const Home = () => {
   return (
-    <div className=" bricolage-font text-black">
+    <div className=" bricolage-font text-white overflow-x-hidden">
       <GradientBackground>
         <div className="">
           <Navbar />
@@ -41,7 +42,7 @@ const Home = () => {
                   Vishal Aakash
                 </span>
               </p>
-              <div className=" text-2xl md:text-3xl text-black flex justify-center font-semibold ">
+              <div className=" text-2xl md:text-3xl text-white flex justify-center font-semibold ">
                 <TypeWriting />
               </div>
             </div>
@@ -71,9 +72,8 @@ const Home = () => {
         </div>
       </GradientBackground>
       <div className="">
-        <div className="bg-gradient-to-t from-pink-500 via-red-400 to-yellow-500">
-            <p className=" brandy-font text-center text-white text-7xl">About Me</p>
-        </div>
+        
+        <About />
       </div>
     </div>
   );
