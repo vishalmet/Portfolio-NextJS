@@ -3,7 +3,8 @@ import Navbar from "@/components/NavBar";
 import TypeWriting from "@/components/TypeWriting";
 import Image from "next/image";
 import Me from "../../assets/me.png";
-import About from "@/components/About";
+import About from "@/app/About/Page";
+import Experience from "@/app/Experience/Page";
 
 const Home = () => {
   return (
@@ -56,8 +57,11 @@ const Home = () => {
         </div>
       </GradientBackground>
 
-      <div className="">
+      <div className="" id="about">
         <About />
+      </div>
+      <div className="">
+        <Experience />
       </div>
     </div>
   );

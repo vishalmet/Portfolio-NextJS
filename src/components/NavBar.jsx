@@ -51,13 +51,13 @@ const Navbar = () => {
           </div>
           <div className="hidden bricolage-font text-white text-xl lg:flex lg:items-center lg:justify-evenly w-full">
               <Link
-                href="/"
+                href="#home"
                 className="py-1 px-1 mx-1 md:py-3 md:px-10 md:mx-3 flex-wrap hover:border-b-2 hover:border-white hover:bg-gradient-to-t from-pink-500 via-red-500 to-yellow-500 hover:rounded-full cursor-pointer"
               >
                 Home
               </Link>
               <Link
-                href="/about"
+                href="#about"
                 className="py-1 px-1 mx-1 md:py-3 md:px-10 md:mx-3 flex-wrap hover:border-b-2 hover:border-white hover:bg-gradient-to-t from-pink-500 via-red-500 to-yellow-500 hover:rounded-full cursor-pointer"
               >
                 About
