@@ -60,9 +60,9 @@ const Home = () => {
       <div className="" id="about">
         <About />
       </div>
-      <div className="">
+      {/* <div className="">
         <Experience />
-      </div>
+      </div> */}
     </div>
   );
 };

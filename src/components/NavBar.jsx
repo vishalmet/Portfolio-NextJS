@@ -2,9 +2,11 @@ import { useState } from "react";
 import Link from "next/link";
 import classNames from "classnames";
 import Image from "next/image";
+
 import Logo from "../assets/VAlogo.png";
 
 const Navbar = () => {
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -67,10 +69,10 @@ const Navbar = () => {
                 <span className="pl-2 cursor-pointer">VA</span>
               </Link>
               <Link
-                href="/services"
+                href="/experience"
                 className="py-1 px-1 mx-1 md:py-3 md:px-10 md:mx-3 flex-wrap hover:border-b-2 hover:border-white hover:bg-gradient-to-t from-pink-500 via-red-500 to-yellow-500 hover:rounded-full cursor-pointer"
-              >
-                Services
+                >
+                Experience
               </Link>
               <Link
                 href="/contact"
