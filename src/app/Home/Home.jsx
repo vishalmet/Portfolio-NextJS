@@ -4,7 +4,8 @@ import TypeWriting from "@/components/TypeWriting";
 import Image from "next/image";
 import Me from "../../assets/me.png";
 import About from "@/app/About/Page";
-import Experience from "@/app/Experience/Page";
+// import Experience from "@/app/Experience/Page";
+import Works from "@/app/Works/Page"
 
 const Home = () => {
   return (
@@ -63,6 +64,9 @@ const Home = () => {
       {/* <div className="">
         <Experience />
       </div> */}
+      <div className="">
+        <Works />
+      </div>
     </div>
   );
 };

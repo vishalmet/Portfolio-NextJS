@@ -10,7 +10,7 @@ const Slider = () => {
       <Marquee
         className="overflow-x-hidden p-2"
         style={{ zIndex: 0 }}
-        direction="right"
+        direction="left"
       >
         <div className="flex space-x-16 text-white font-semibold ml-16">
             <p className=" border-2 border-white w-40 bg-gradient-to-r from-orange-600 to-orange-400 flex justify-center p-2 px-4 rounded">HTML</p>
@@ -34,7 +34,7 @@ const Slider = () => {
       <Marquee
         className="overflow-x-hidden p-2"
         style={{ zIndex: 0 }}
-        direction="left"
+        direction="right"
       >
         <div className="flex space-x-16 text-white font-semibold mr-16">
             <p className=" border-2 border-white w-40 bg-gradient-to-r from-orange-600 to-orange-400 flex justify-center p-2 px-4 rounded">HTML</p>
