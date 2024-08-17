@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import React from "react";
 import Lottie from "lottie-react";
 import Illustration from "../../../public/animation.json";
@@ -6,6 +7,10 @@ import Slider from "@/components/Slider";
 import Marquee from "react-fast-marquee";
 
 const About = () => {
+  useEffect(() => {
+    // Place any code that uses `document` here
+  }, []);
+
   return (
     <div className="gradient-container text-white min-h-screen">
       <div className="relative bg-transparent text-white flex justify-center items-center brandy-font p-4 border-y-2 border-white h-24 lg:h-32">
