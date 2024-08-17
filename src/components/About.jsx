@@ -20,9 +20,9 @@ const About = () => {
           </div>
           <div className=" ">
             <div className="md:text-xl flex justify-center text-center">
-              I'm a seasoned front-end developer proficient in ReactJS, NextJS
+              I&apos;m a seasoned front-end developer proficient in ReactJS, NextJS
               and Tailwind CSS, with expertise in React Native for mobile app
-              development. Additionally, I've extended my skill set to include
+              development. Additionally, I&apos;ve extended my skill set to include
               blockchain development, enabling me to create innovative
               decentralized applications (dApps) and contribute to the evolving
               landscape of blockchain technology.
