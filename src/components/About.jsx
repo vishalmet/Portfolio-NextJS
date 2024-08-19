@@ -9,7 +9,7 @@ const About = () => {
 
 
   return (
-    <div className="gradient-container text-white min-h-screen">
+    <div className="gradient-container  text-white min-h-screen">
       <div className="relative bg-transparent text-white flex justify-center items-center brandy-font p-4 border-y-2 border-white h-24 lg:h-32">
         <p className=" z-10 text-xl md:text-3xl lg:text-6xl bg-gradient-to-t from-pink-500 via-red-400 to-yellow-500 rounded p-3">
           ✦ About Me ✦
