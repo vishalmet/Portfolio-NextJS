@@ -10,7 +10,7 @@ const Page = () => {
     {
       imageSrc: Vortex,
       title: "VortexEngine",
-      description: "Unlock the future of gaming with our cutting-edge game engine. Designed for developers, by developers, VortexEngine offers seamless integration, powerful tools, and endless possibilities. Join the revolution and bring your game ideas to life on the blockchain."
+      description: "Unlock the future of  gaming with our cutting-edge game engine. Designed for developers, by developers, VortexEngine offers seamless integration, powerful tools, and endless possibilities. Join the revolution and bring your game ideas to life on the blockchain."
     },
     {
       imageSrc: Onchain,
