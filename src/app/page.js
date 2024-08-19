@@ -15,9 +15,9 @@ export default function Page() {
       }, 0);
     };
 
-    if (document.readyState === "complete") {
+    if (typeof document !== "undefined" && document.readyState === "complete") {
       handleComplete();
-    } else {
+    } else if (typeof window !== "undefined") {
       window.addEventListener("load", handleComplete);
       return () => window.removeEventListener("load", handleComplete);
     }
