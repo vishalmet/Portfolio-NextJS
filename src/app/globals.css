@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -43,7 +44,6 @@ body {
   font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
 .bricolage-font {
   font-family: "Bricolage Grotesque";
 }
@@ -83,7 +83,7 @@ body {
   width: auto;
   height: auto;
   /* background-color: #1a1a1a; */
-  border-radius:;
+  /* border-radius:; */
   transition: all .2s;
  }
  

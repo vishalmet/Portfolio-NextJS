@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Home from "./Home/Home.jsx";
 // import Loader from "@/Components/Loader";
 import "@/app/globals.css";
@@ -8,20 +8,20 @@ import "@/app/globals.css";
 export default function Page() {
   const [loading, setLoading] = useState(true);
 
-  // useEffect(() => {
-  //   const handleComplete = () => {
-  //     setTimeout(() => {
-  //       setLoading(false);
-  //     }, 0);
-  //   };
+  useEffect(() => {
+    const handleComplete = () => {
+      setTimeout(() => {
+        setLoading(false);
+      }, 0);
+    };
 
-  //   if (document.readyState === "complete") {
-  //     handleComplete();
-  //   } else {
-  //     window.addEventListener("load", handleComplete);
-  //     return () => window.removeEventListener("load", handleComplete);
-  //   }
-  // }, []);
+    if (document.readyState === "complete") {
+      handleComplete();
+    } else {
+      window.addEventListener("load", handleComplete);
+      return () => window.removeEventListener("load", handleComplete);
+    }
+  }, []);
 
   return (
     <>

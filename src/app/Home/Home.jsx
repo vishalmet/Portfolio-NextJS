@@ -1,3 +1,4 @@
+"use client"
 import GradientBackground from "@/components/GradientBg";
 import Navbar from "@/components/NavBar";
 import TypeWriting from "@/components/TypeWriting";
