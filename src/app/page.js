@@ -1,7 +1,7 @@
 // src/app/page.js
 "use client";
 import { useState, useEffect } from "react";
-import Home from "./Home/Home.jsx";  
+import Home from "./Home/Home.jsx";  // Ensure this path is correct
 import "@/app/globals.css";
 
 export default function Page() {
