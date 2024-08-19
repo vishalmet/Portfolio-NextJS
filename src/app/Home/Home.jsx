@@ -6,8 +6,15 @@ import Me from "../../assets/me.png";
 import About from "@/components/About";
 // import Experience from "@/app/Experience/Page";
 import Works from "@/components/Works"
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      // Your code that uses document or window
+    }
+  }, []);
+  
   return (
     <div className=" bricolage-font text-white overflow-x-hidden">
       <GradientBackground >
