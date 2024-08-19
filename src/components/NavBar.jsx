@@ -1,8 +1,8 @@
+"use client"
 import { useState } from "react";
 import Link from "next/link";
 import classNames from "classnames";
 import Image from "next/image";
-
 import Logo from "../assets/VAlogo.png";
 
 const Navbar = () => {
