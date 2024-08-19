@@ -1,39 +1,73 @@
-"use client"
+"use client";
 import React from "react";
 import Marquee from "react-fast-marquee";
 import Card from "@/components/WorksCard1";
 import Vortex from "@/assets/vortexengine.png";
 import Onchain from "@/assets/onchainmemes.png";
 import OneSign from "@/assets/onesign.png";
+import Ticket3 from "@/assets/ticket3.jpeg";
+import Grfolio from "@/assets/grfolio.jpeg"
+import FundRaiz from "@/assets/FundRaiz.jpeg"
+import CryptCoffee from "@/assets/cryptcoffee.png"
+import Tesla from "@/assets/tesla.png"
+import IG from "@/assets/IG.png"
 
 const Page = () => {
   const cards = [
     {
       imageSrc: Vortex,
       title: "VortexEngine",
-      description: "Unlock the future of  gaming with our cutting-edge game engine. Designed for developers, by developers, VortexEngine offers seamless integration, powerful tools, and endless possibilities. Join the revolution and bring your game ideas to life on the blockchain."
+      description: "Unlock the future of gaming with our cutting-edge game engine. Designed for developers, by developers, VortexEngine offers seamless integration, powerful tools, and endless possibilities. Join the revolution and bring your game ideas to life on the blockchain.",
+      url: "https://vortexengine.vercel.app"
     },
     {
       imageSrc: Onchain,
       title: "OnchainMemes",
-      description: "The ultimate platform for creating, owning, and trading meme NFTs. We bring the best of internet humor and digital art together, transforming your favorite memes into unique, collectible NFTs."
+      description: "The ultimate platform for creating, owning, and trading meme NFTs. We bring the best of internet humor and digital art together, transforming your favorite memes into unique, collectible NFTs.",
+      url: "https://onchain-memes.vercel.app"
     },
     {
       imageSrc: OneSign,
       title: "OneSign",
-      description: "Use our dynamic wallet integration to securely connect your preferred crypto wallet"
+      description: "A DevTool for Next Gen Effortless ZK Onboarding, provides seamless decentralized access and enabling users to effortlessly log in using only their user ID, removing the necessity for repetitive wallet connections or traditional login methods.",
+      url: "https://eth-mumbai-bice.vercel.app/"
     },
     {
-      imageSrc: Vortex,
-      title: "VortexEngine",
-      description: "Use our dynamic wallet integration to securely connect your preferred crypto wallet"
+      imageSrc: Ticket3,
+      title: "Ticket3",
+      description: "Ticket3 offers a user-friendly platform for event organizers and attendees alike. One of the central objectives of this DApp is to tackle a persistent issue in the world of event management - the black market ticket selling. ",
+      url: "https://devfolio.co/projects/ticket-v-d478"
     },
     {
-      imageSrc: Vortex,
-      title: "VortexEngine",
-      description: "Use our dynamic wallet integration to securely connect your preferred crypto wallet"
+      imageSrc: Grfolio,
+      title: "GrFolio",
+      description: "Our decentralized product, akin to Devfolio, offers proof of work to hackers. Overcoming the challenge of showing proof of work, our solution empowers users effectively.",
+      url: "https://devfolio.co/projects/grfolio-6779"
     },
-    // Add more cards here if needed
+    {
+      imageSrc: FundRaiz,
+      title: "FundRaiz",
+      description: "Empowerment through Decentralized Crowdfunding. Our platform enables users to create or contribute to campaigns, ensuring transparency and maximizing donations for administrators.",
+      url: "https://devfolio.co/projects/ticket-v-d478"
+    },
+    {
+      imageSrc: CryptCoffee,
+      title: "CryptCoffee",
+      description: "A basic Web3 application designed for learning purposes, allowing users to send tokens to support me, essentially for a coffee.",
+      url: "https://coffeecornerspk.vercel.app/"
+    },
+    {
+      imageSrc: Tesla,
+      title: "Tesla UI",
+      description: "Created purely out of interest, this Tesla-inspired UI showcases my dedication to learning and building with Tailwind CSS. The seamless design and innovative technology of Tesla continue to inspire us.",
+      url: "https://github.com/vishalmet/Tesla-UI"
+    },
+    {
+      imageSrc: IG,
+      title: "Instagram Web UI",
+      description: "Created for learning and inspired by Instagram's seamless UI and innovative tech, this project showcases my interest in Tailwind CSS.",
+      url: "https://github.com/vishalmet/Tesla-UI"
+    },
   ];
 
   return (
@@ -53,6 +87,7 @@ const Page = () => {
             imageSrc={card.imageSrc}
             title={card.title}
             description={card.description}
+            url={card.url} // Pass the URL to the Card component
           />
         ))}
       </Marquee>

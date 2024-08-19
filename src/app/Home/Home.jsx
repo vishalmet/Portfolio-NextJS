@@ -1,7 +1,6 @@
 "use client"
 import GradientBackground from "@/components/GradientBg";
 import Navbar from "@/components/NavBar";
-// import TypeWriting from "@/components/TypeWriting";
 import Image from "next/image";
 import Me from "../../assets/me.png";
 import About from "@/components/About";
