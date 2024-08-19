@@ -14,6 +14,7 @@ export default function Page() {
         setLoading(false);
       }, 0);
     };
+    document.title = "Home Page";
 
     if (document.readyState === "complete") {
       handleComplete();
