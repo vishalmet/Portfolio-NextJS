@@ -5,7 +5,7 @@ import Image from "next/image";
 import Me from "../../assets/me.png";
 import About from "@/components/About";
 // import Experience from "@/app/Experience/Page";
-import Works from "@/app/Works/Page"
+import Works from "@/components/Works"
 
 const Home = () => {
   return (
