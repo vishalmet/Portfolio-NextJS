@@ -23,9 +23,6 @@ const Home = () => {
                   Vishal Aakash
                 </span>
               </p>
-              {/* <div className="text-2xl md:text-3xl text-white flex justify-center font-semibold">
-                <TypeWriting />
-              </div> */}
             </div>
             <div className="hidden lg:flex justify-center items-center text-white">
               <div className="space-y-40">

@@ -30,8 +30,8 @@ const About = () => {
                 I&apos;m a seasoned front-end developer proficient in ReactJS, NextJS, and Tailwind CSS, with expertise in React Native for mobile app development. Additionally, I&apos;ve extended my skill set to include blockchain development, enabling me to create innovative decentralized applications (dApps) and contribute to the evolving landscape of blockchain technology.
               </div>
               <div className="flex justify-center space-x-6">
-                <ButtonTemp title="Resume/CV" to="https://drive.google.com/file/d/1G5g1XH0qlCjgMV5sQJkpwvDJGj8tays7/view?usp=sharing" />
-                <ButtonTemp title="Certificates" to="https://drive.google.com/drive/folders/1gSkpVjMNAO3Yw4Odht6OZyKvrOAXJPDe?usp=sharing" />
+                <ButtonTemp title="Resume/CV" to="https://drive.google.com/file/d/1G5g1XH0qlCjgMV5sQJkpwvDJGj8tays7/view?usp=sharing" target="_blank" rel="noopener noreferrer" />
+                <ButtonTemp title="Certificates" to="https://drive.google.com/drive/folders/1gSkpVjMNAO3Yw4Odht6OZyKvrOAXJPDe?usp=sharing" target="_blank" rel="noopener noreferrer" />
               </div>
             </div>
           </div>
