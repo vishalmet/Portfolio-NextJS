@@ -5,12 +5,22 @@ import Image from "next/image";
 import Me from "../../assets/me.png";
 import About from "@/components/About";
 import Works from "@/components/Works";
+import Marquee from "react-fast-marquee";
+
 
 const Home = () => {
   return (
     <div className="bricolage-font text-white overflow-x-hidden">
       <GradientBackground>
         <div className="pb-16 md:pb-0">
+        <div className=" lg:hidden bg-black backdrop-blur-lg backdrop-filter shadow-2xl p-3">
+              <Marquee className="">
+                <p> ☆ A Frontend Dev</p>
+                <p> ☆ A Web3 Enthusiast</p>
+                <p> ☆ A Social Media Manager</p>
+                <p> ☆ A Software Engineer</p>
+              </Marquee>
+            </div>
           <Navbar />
           <div className="pt-16 items-center text-center mx-6 md:mx-14">
             <div className="flex justify-center lg:hidden items-center text-white">
@@ -23,6 +33,14 @@ const Home = () => {
                   Vishal Aakash
                 </span>
               </p>
+            </div>
+            <div className=" lg:hidden bg-transparent backdrop-blur-lg backdrop-filter shadow-2xl p-3">
+            <Marquee className="">
+                <p> ☆ A Frontend Dev</p>
+                <p> ☆ A Web3 Enthusiast</p>
+                <p> ☆ A Social Media Manager</p>
+                <p> ☆ A Software Engineer</p>
+              </Marquee>
             </div>
             <div className="hidden lg:flex justify-center items-center text-white">
               <div className="space-y-40">
