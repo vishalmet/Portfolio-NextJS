@@ -6,6 +6,7 @@ import Me from "../../assets/me.png";
 import About from "@/components/About";
 import Works from "@/components/Works";
 import Marquee from "react-fast-marquee";
+import Footer from "@/components/Footer";
 
 
 const Home = () => {
@@ -70,6 +71,7 @@ const Home = () => {
       <div id="works">
         <Works />
       </div>
+      <Footer />
     </div>
   );
 };
