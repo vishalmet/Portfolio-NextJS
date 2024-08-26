@@ -57,7 +57,7 @@ const Navbar = () => {
             </div>
           </div>
          
-
+          {/* desktop */}
           <div className="hidden bricolage-font text-white text-xl lg:flex lg:items-center lg:justify-evenly w-full">
             <Link
               href="#home"
@@ -67,7 +67,7 @@ const Navbar = () => {
                 {
                   "border-b-2 border-white bg-gradient-to-t from-pink-500 via-red-500 to-yellow-500 rounded-full":
                     activeMenu === "home",
-                  "hover:border-b-2 hover:border-white hover:bg-gradient-to-t from-pink-500 via-red-500 to-yellow-500 hover:rounded-full cursor-pointer":
+                  "border-b-2 border-white bg-gradient-to-t from-pink-500 via-red-500 to-yellow-500 rounded-full cursor-pointer":
                     activeMenu !== "home",
                 }
               )}
@@ -130,6 +130,7 @@ const Navbar = () => {
           </div>
         </div>
 
+        {/* mobile */}
         <div
           className={`lg:hidden absolute inset-y-0 z-50 left-0 transform transition duration-300 ease-in-out bg-black/90 text-white backdrop-filter backdrop-blur-lg h-screen w-full ${
             isOpen ? "translate-x-0" : "-translate-x-full"
@@ -152,7 +153,7 @@ const Navbar = () => {
                   {
                     "border-b-2 border-white bg-gradient-to-t from-pink-500 via-red-500 to-yellow-500 rounded-full":
                       activeMenu === "home",
-                    "hover:border-b-2 hover:border-white hover:bg-gradient-to-t from-pink-500 via-red-500 to-yellow-500 hover:rounded-full cursor-pointer":
+                    "hover:border-b-2 border-white bg-gradient-to-t from-pink-500 via-red-500 to-yellow-500 rounded-full cursor-pointer":
                       activeMenu !== "home",
                   }
                 )}
