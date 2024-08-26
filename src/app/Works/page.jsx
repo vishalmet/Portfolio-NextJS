@@ -13,6 +13,7 @@ import CryptCoffee from "@/assets/cryptcoffee.png";
 import Tesla from "@/assets/tesla.png";
 import IG from "@/assets/IG.png";
 import ButtonTemp from "../../components/Button";
+import Footer from "@/components/Footer";
 
 const Page = () => {
   const { ref, inView } = useInView({
@@ -121,6 +122,7 @@ const Page = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
