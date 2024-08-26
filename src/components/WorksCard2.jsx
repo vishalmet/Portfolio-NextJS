@@ -16,7 +16,7 @@ const CardTemp = ({ imageSrc, title, description, url }) => {
               <p className="text-center">{description}</p>
             </div>
             <a href={url} target="_blank" rel="noopener noreferrer" className="">
-              <ButtonTemp title="EXPLORE MORE"></ButtonTemp>
+              <ButtonTemp title="VIEW"></ButtonTemp>
             </a>
           </div>
         </div>
