@@ -122,9 +122,9 @@ const Page = () => {
         </Marquee>
       </div>
 
-      {/* <div className="">
-        <ButtonTemp title="EXPLORE MORE"></ButtonTemp>
-      </div> */}
+      <div className="">
+        <ButtonTemp title="EXPLORE MORE" to="/Works"></ButtonTemp>
+      </div>
     </div>
   );
 };
