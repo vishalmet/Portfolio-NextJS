@@ -14,6 +14,12 @@ pnpm dev
 bun dev
 ```
 
+Installing tailwind css in Vite React 
+```bash
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
