@@ -98,7 +98,7 @@ const Navbar = () => {
               <span className="pl-2 cursor-pointer">VA</span>
             </Link>
             <Link
-              href="/experience"
+              href="#experience"
               onClick={() => handleMenuClick("experience")}
               className={classNames(
                 "py-1 px-1 mx-1 md:py-3 md:px-10 md:mx-3 flex-wrap",
@@ -180,7 +180,7 @@ const Navbar = () => {
               </div>
               <div className="">
               <Link
-                href="/experience"
+                href="#experience"
                 onClick={() => handleMenuClick("experience")}
                 className={classNames(
                   "py-3 px-10",
