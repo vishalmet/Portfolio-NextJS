@@ -109,12 +109,12 @@ body {
 
 .overlay-left {
   left: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  background: linear-gradient(to right, rgb(32, 32, 32), rgba(255, 255, 255, 0));
 }
 
 .overlay-right {
   right: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  background: linear-gradient(to left, rgba(32, 32, 32), rgba(255, 255, 255, 0));
 }
 
 
