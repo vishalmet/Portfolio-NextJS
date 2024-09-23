@@ -22,7 +22,7 @@ const Home = ({ userName }) => {
   return (
     <div className="bricolage-font text-white overflow-x-hidden">
       <GradientBackground>
-        <div className="pb-16 md:pb-0">
+        <div className="pb-16 md:pb-6">
           <div className="lg:hidden bg-black/50 backdrop-blur-lg backdrop-filter shadow-2xl p-3">
             <Marquee>
               <p>☆ A Frontend Dev</p>

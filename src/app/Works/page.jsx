@@ -10,6 +10,7 @@ import Ticket3 from "@/assets/ticket3.jpeg";
 import Grfolio from "@/assets/grfolio.jpeg";
 import FundRaiz from "@/assets/FundRaiz.jpeg";
 import CryptCoffee from "@/assets/cryptcoffee.png";
+import Grid from "@/assets/grid.webp";
 import Tesla from "@/assets/tesla.png";
 import IG from "@/assets/IG.png";
 import ButtonTemp from "../../components/Button";
@@ -105,26 +106,40 @@ const Page = () => {
             </Marquee>
           </div>
         </div>
-        <div className=" flex justify-start px-6">
-          <ButtonTemp title="BACK" to="/#works"></ButtonTemp>
-        </div>
-        <div className="flex justify-center">
-          <div className="lg:grid lg:grid-cols-2 gap-6" ref={ref}>
-            {cards.map((card, index) => (
-              <CardTemp
-                key={index}
-                imageSrc={card.imageSrc}
-                title={card.title}
-                description={card.description}
-                url={card.url}
-              />
-            ))}
+        <div className="relative min-h-screen pb-10">
+          <div
+            className="absolute inset-0 bg-black opacity-30"
+            style={{
+              backgroundImage: `url(${Grid.src})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundAttachment: "fixed", // Fixes the background
+            }}
+          ></div>
+
+          <div className="relative text-white z-10">
+            <div className=" flex justify-start px-6">
+              <ButtonTemp title="BACK" to="/#works"></ButtonTemp>
+            </div>
+            <div className="flex justify-center">
+              <div className="lg:grid lg:grid-cols-2 gap-6" ref={ref}>
+                {cards.map((card, index) => (
+                  <CardTemp
+                    key={index}
+                    imageSrc={card.imageSrc}
+                    title={card.title}
+                    description={card.description}
+                    url={card.url}
+                  />
+                ))}
+              </div>
+            </div>
           </div>
         </div>
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
-  );
+      );
 };
 
-export default Page;
+      export default Page;
