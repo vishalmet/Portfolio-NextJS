@@ -83,9 +83,9 @@ const Home = ({ userName }) => {
       <div id="works">
         <Works />
       </div>
-      <div className="pt-24" id="experience">
+      {/* <div className="pt-24" id="experience">
         <Experience />
-      </div>
+      </div> */}
       <Footer />
     </div>
   );
