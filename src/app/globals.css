@@ -39,7 +39,7 @@ body {
 }
 
 .brandy-font {
-  font-family: 'Brandy';
+  font-family: 'Brandy', sans-serif;
   font-weight: normal;
   font-style: normal;
 }
