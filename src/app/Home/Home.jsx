@@ -8,6 +8,7 @@ import Works from "@/components/Works";
 import Marquee from "react-fast-marquee";
 import Footer from "@/components/Footer";
 import Experience from "@/components/Experience.jsx"
+import Connect from "@/components/Connect";
 
 // RoleCard Component for reusable roles
 const RoleCard = ({ text, rotate }) => (
@@ -22,7 +23,7 @@ const Home = ({ userName }) => {
   return (
     <div className="bricolage-font text-white overflow-x-hidden">
       <GradientBackground>
-        <div className="pb-16 ">
+        <div className=" ">
           <div className="lg:hidden bg-black/50 backdrop-blur-lg backdrop-filter shadow-2xl p-3">
             <Marquee>
               <p>☆ A Frontend Dev</p>
@@ -83,6 +84,9 @@ const Home = ({ userName }) => {
       <div className="" id="works">
         <Works />
       </div>
+      {/* <div className="">
+        <Connect />
+      </div> */}
       {/* <div className="pt-24" id="experience">
         <Experience />
       </div> */}
