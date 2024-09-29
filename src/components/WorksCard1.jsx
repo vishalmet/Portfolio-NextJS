@@ -15,7 +15,7 @@ const Card = ({ imageSrc, title, description, url }) => {
               </p>
 
               {/* Scrollable and truncated description */}
-              <div className="text-center max-h-[100px] overflow-y-auto">
+              <div className="text-center max-h-[100px] overflow-y-auto scrollbar-thin custom-scrollbar">
                 <p className="overflow-hidden">
                   {description}
                 </p>
