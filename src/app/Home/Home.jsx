@@ -8,7 +8,7 @@ import Works from "@/components/Works";
 import Marquee from "react-fast-marquee";
 import Footer from "@/components/Footer";
 import Experience from "@/components/Experience.jsx"
-import Connect from "@/components/Connect";
+// import Connect from "@/components/Connect";
 
 // RoleCard Component for reusable roles
 const RoleCard = ({ text, rotate }) => (
