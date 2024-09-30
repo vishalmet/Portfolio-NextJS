@@ -7,7 +7,7 @@ import About from "@/components/About";
 import Works from "@/components/Works";
 import Marquee from "react-fast-marquee";
 import Footer from "@/components/Footer";
-import Experience from "@/components/Experience.jsx"
+// import Experience from "@/components/Experience.jsx"
 // import Connect from "@/components/Connect";
 
 // RoleCard Component for reusable roles
