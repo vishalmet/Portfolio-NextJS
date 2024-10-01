@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Vishal | Frontend Developer Portfolio",
-  description: "Discover Vishal's portfolio featuring responsively dynamic websites, innovative UI/UX designs, and cutting-edge frontend development skills. Specializing in React, Next.js, and modern web technologies.",
+  description: "Hi! I am Vishal Aakash discover my portfolio featuring responsively dynamic websites, innovative UI/UX designs, and cutting-edge frontend development skills. Specializing in React, Next.js, and modern web technologies.",
 };
 
 
