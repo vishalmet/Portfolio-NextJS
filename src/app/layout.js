@@ -6,14 +6,15 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Vishal | Frontend Developer Portfolio",
-  description: "Hi! I am Vishal Aakash discover my portfolio featuring responsively dynamic websites, innovative UI/UX designs, and cutting-edge frontend development skills. Specializing in React, Next.js, and modern web technologies.",
+  description: "Hi! I am Vishal Aakash, feel free to discover my portfolio featuring responsively dynamic websites, innovative UI/UX designs, and cutting-edge frontend development skills. Specializing in React, Next.js, and modern web technologies.",
 };
 
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-       <Head>
+      <Head>
+        <meta name="google-site-verification" content="google5cf586d124ce5440" />
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
