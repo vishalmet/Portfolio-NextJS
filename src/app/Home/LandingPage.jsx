@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
-import { Github, Twitter, Linkedin } from 'lucide-react';
+import { Github, Twitter, Linkedin, ArrowRightCircle } from 'lucide-react';
 import Me from "../../assets/me.png";
 import Navbar from '@/components/NavBar';
 
@@ -246,14 +246,14 @@ const LandingPage = ({ userName }) => {
                                 transition={{ delay: 0.3 }}
                                 className="flex items-center gap-6 pt-4"
                             >
-                                <motion.button
+                                  <motion.button
                                     onClick={handleGetInTouch}
-                                    whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.98 }}
-                                    className="px-6 py-3 bg-gradient-to-t from-pink-500 via-red-400 to-yellow-500 rounded-lg 
-                        font-medium hover:shadow-lg hover:shadow-pink-500/20 transition-all duration-300"
+                                    className="px-6 py-3 group bg-gradient-to-t from-pink-500 via-red-400 to-yellow-500 rounded-lg 
+                        font-medium hover:shadow-lg hover:shadow-pink-500/20 transition-all duration-300 flex items-center"
                                 >
-                                    Get in touch
+                                    <span className="mr-2">Get in touch</span>
+                                        <ArrowRightCircle className="w-5 h-5  group-hover:-rotate-45 transition-transform duration-300" />
                                 </motion.button>
                                 <div className="flex items-center gap-4">
                                     <SocialButton icon={Github}
