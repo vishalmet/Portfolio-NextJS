@@ -85,6 +85,13 @@ const LandingPage = ({ userName }) => {
         return () => clearInterval(interval);
     }, []);
 
+    const messageTemplate = `Hello Vishal,\n\nI would like to get in touch with you.\n\nRegards,\n[Your Name]`;
+
+    const handleGetInTouch = () => {
+        const linkedInUrl = `https://www.linkedin.com/messaging/compose/?recipient=vishal-aakash&body=${encodeURIComponent(messageTemplate)}`;
+        window.open(linkedInUrl, '_blank');
+    };
+
     return (
         <div className="min-h-screen bg-black text-white relative overflow-hidden">
             {/* Dynamic Background Elements */}
@@ -239,15 +246,15 @@ const LandingPage = ({ userName }) => {
                                 transition={{ delay: 0.3 }}
                                 className="flex items-center gap-6 pt-4"
                             >
-                                <motion.a
-                                    href="#contact"
+                                <motion.button
+                                    onClick={handleGetInTouch}
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.98 }}
                                     className="px-6 py-3 bg-gradient-to-t from-pink-500 via-red-400 to-yellow-500 rounded-lg 
-                    font-medium hover:shadow-lg hover:shadow-pink-500/20 transition-all duration-300"
+                        font-medium hover:shadow-lg hover:shadow-pink-500/20 transition-all duration-300"
                                 >
                                     Get in touch
-                                </motion.a>
+                                </motion.button>
                                 <div className="flex items-center gap-4">
                                     <SocialButton icon={Github}
                                         target="_blank" rel="noopener noreferrer"

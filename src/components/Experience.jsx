@@ -85,7 +85,7 @@ const ExperienceShowcase = () => {
 
 
   return (
-    <div className="min-h-screen bg-black/95 text-white relative overflow-hidden pb-12 sm:pb-16 md:pb-20">
+    <div className="h-fit lg:min-h-screen bg-black/95 text-white relative overflow-hidden pb-12 sm:pb-16 md:pb-20">
       <GlowingBackground />
 
       {/* Floating Tech Words - Hidden on mobile */}

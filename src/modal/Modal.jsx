@@ -30,7 +30,7 @@ const Modal = ({ onSubmit }) => {
         <motion.h2 
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          className="text-3xl brandy-font text-center mb-8"
+          className="text-xl md:text-3xl brandy-font text-center mb-4 md:mb-8"
         >
           Hey! What&apos;s your{" "}
           <span className="bg-gradient-to-t from-pink-500 via-red-400 to-yellow-500 bg-clip-text text-transparent">
