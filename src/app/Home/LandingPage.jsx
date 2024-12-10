@@ -1,3 +1,4 @@
+// LandingPage.jsx
 "use client"
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -128,7 +129,7 @@ const LandingPage = ({ userName }) => {
                                 transition={{ delay: 0.1 }}
                                 className="text-4xl md:text-5xl lg:text-6xl font-bold"
                             >
-                                I'm{" "}
+                                I&apos;m{" "}
                                 <motion.span
                                     whileHover={{ scale: 1.02 }}
                                     className="bg-gradient-to-t from-pink-500 via-red-400 to-yellow-500 text-transparent bg-clip-text inline-block"

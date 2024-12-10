@@ -1,4 +1,3 @@
-"use client";
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
@@ -33,7 +32,7 @@ const Modal = ({ onSubmit }) => {
           animate={{ y: 0, opacity: 1 }}
           className="text-3xl brandy-font text-center mb-8"
         >
-          Hey! What's your{" "}
+          Hey! What&apos;s your{" "}
           <span className="bg-gradient-to-t from-pink-500 via-red-400 to-yellow-500 bg-clip-text text-transparent">
             name
           </span>
