@@ -89,15 +89,19 @@ const ExperienceShowcase = () => {
       <GlowingBackground />
 
       {/* Floating Tech Words - Hidden on mobile */}
-      {/* <div className="absolute inset-0 opacity-10 hidden md:block">
-        {experiences[0].skills.map((skill, index) => (
+      <div className="absolute inset-0 opacity-10 hidden md:block">
+      {isBrowser &&
+        skills.map((skill, index) => (
           <motion.div
             key={skill}
             className="absolute text-base sm:text-xl md:text-2xl font-bold"
-            initial={{ x: Math.random() * window.innerWidth, y: Math.random() * window.innerHeight }}
+            initial={{
+              x: Math.random() * windowWidth,
+              y: Math.random() * windowHeight,
+            }}
             animate={{
-              x: [null, Math.random() * window.innerWidth],
-              y: [null, Math.random() * window.innerHeight],
+              x: [null, Math.random() * windowWidth],
+              y: [null, Math.random() * windowHeight],
             }}
             transition={{
               duration: 20,
@@ -108,7 +112,7 @@ const ExperienceShowcase = () => {
             {skill}
           </motion.div>
         ))}
-      </div> */}
+    </div>
 
       {/* Main Content */}
       <div className="relative container mx-auto px-4 w-full">
