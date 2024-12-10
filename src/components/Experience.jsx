@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, Award, ChevronRight, ChevronLeft } from 'lucide-react';
 import Marquee from 'react-fast-marquee';
@@ -66,13 +66,30 @@ const GlowingBackground = () => (
 const ExperienceShowcase = () => {
   const [selectedId, setSelectedId] = useState(0);
   const [hoveredSkill, setHoveredSkill] = useState(null);
+  const [isBrowser, setIsBrowser] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(0);
+  const [windowHeight, setWindowHeight] = useState(0);
+  const [skills, setSkills] = useState([]);
+
+  useEffect(() => {
+    // Check if we're in a browser environment
+    if (typeof window !== "undefined") {
+      setIsBrowser(true);
+      setWindowWidth(window.innerWidth);
+      setWindowHeight(window.innerHeight);
+
+      // Assuming you have an 'experiences' object with the skills data
+      setSkills(experiences[0].skills);
+    }
+  }, []);
+
 
   return (
     <div className="min-h-screen bg-black/95 text-white relative overflow-hidden pb-12 sm:pb-16 md:pb-20">
       <GlowingBackground />
 
       {/* Floating Tech Words - Hidden on mobile */}
-      <div className="absolute inset-0 opacity-10 hidden md:block">
+      {/* <div className="absolute inset-0 opacity-10 hidden md:block">
         {experiences[0].skills.map((skill, index) => (
           <motion.div
             key={skill}
@@ -91,7 +108,7 @@ const ExperienceShowcase = () => {
             {skill}
           </motion.div>
         ))}
-      </div>
+      </div> */}
 
       {/* Main Content */}
       <div className="relative container mx-auto px-4 w-full">
