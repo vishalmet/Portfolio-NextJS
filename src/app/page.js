@@ -22,15 +22,7 @@ export default function Page() {
       setUserName(storedName);
     }
 
-    const clearLocalStorage = () => {
-      localStorage.removeItem("userName");
-    };
 
-    window.addEventListener("beforeunload", clearLocalStorage);
-
-    return () => {
-      window.removeEventListener("beforeunload", clearLocalStorage);
-    };
   }, []);
 
   return (
