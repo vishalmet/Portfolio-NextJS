@@ -1,4 +1,3 @@
-// LandingPage.jsx
 "use client"
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -112,7 +111,80 @@ const LandingPage = ({ userName }) => {
             {/* Main Content */}
             <main className="relative pt-24 pb-20 px-6">
                 <div className="max-w-6xl mx-auto">
-                    <div className="flex flex-col lg:flex-row items-center justify-between gap-16">
+                    <div className="flex flex-col lg:flex-row-reverse items-center justify-between gap-16">
+                        {/* Right Content - Hero Image */}
+                        <motion.div
+                            initial={{ opacity: 0, x: 20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ delay: 0.2 }}
+                            className="lg:w-1/2 relative"
+                        >
+                            <div className="relative">
+                                {/* Main Image Container */}
+                                <motion.div
+                                    whileHover={{ scale: 1.02 }}
+                                    transition={{ duration: 0.3 }}
+                                    className="relative z-10 rounded-2xl overflow-hidden border border-white/10"
+                                >
+                                    <Image
+                                        src={Me}
+                                        alt="Vishal Aakash"
+                                        className="rounded-2xl"
+                                        priority
+                                    />
+                                    {/* Gradient Overlay */}
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                                </motion.div>
+
+                                {/* Background Decorative Elements */}
+                                <motion.div
+                                    animate={{
+                                        rotate: [0, 360]
+                                    }}
+                                    transition={{
+                                        duration: 20,
+                                        repeat: Infinity,
+                                        ease: "linear"
+                                    }}
+                                    className="absolute -inset-2 border border-white/10 rounded-2xl"
+                                />
+                                <motion.div
+                                    animate={{
+                                        rotate: [360, 0]
+                                    }}
+                                    transition={{
+                                        duration: 25,
+                                        repeat: Infinity,
+                                        ease: "linear"
+                                    }}
+                                    className="absolute -inset-6 border border-white/5 rounded-2xl"
+                                />
+
+                                {/* Floating Accent Elements */}
+                                {[...Array(2)].map((_, i) => (
+                                    <motion.div
+                                        key={i}
+                                        className="absolute w-16 h-16 rounded-xl bg-gradient-to-t from-pink-500/5 via-red-400/5 to-yellow-500/5 
+                      backdrop-blur-sm border border-white/10"
+                                        style={{
+                                            top: `${30 + i * 40}%`,
+                                            right: `${-5 + i * 3}%`,
+                                        }}
+                                        animate={{
+                                            y: [-10, 10, -10],
+                                            rotate: [0, 5, 0],
+                                        }}
+                                        transition={{
+                                            duration: 4,
+                                            delay: i * 0.5,
+                                            repeat: Infinity,
+                                            repeatType: "reverse",
+                                        }}
+                                    />
+                                ))}
+                            </div>
+                        </motion.div>
+
                         {/* Left Content */}
                         <div className="lg:w-1/2 space-y-6">
                             <motion.div
@@ -189,79 +261,6 @@ const LandingPage = ({ userName }) => {
                                 </div>
                             </motion.div>
                         </div>
-
-                        {/* Right Content - Hero Image */}
-                        <motion.div
-                            initial={{ opacity: 0, x: 20 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ delay: 0.2 }}
-                            className="lg:w-1/2 relative"
-                        >
-                            <div className="relative">
-                                {/* Main Image Container */}
-                                <motion.div
-                                    whileHover={{ scale: 1.02 }}
-                                    transition={{ duration: 0.3 }}
-                                    className="relative z-10 rounded-2xl overflow-hidden border border-white/10"
-                                >
-                                    <Image
-                                        src={Me}
-                                        alt="Vishal Aakash"
-                                        className="rounded-2xl"
-                                        priority
-                                    />
-                                    {/* Gradient Overlay */}
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-                                </motion.div>
-
-                                {/* Background Decorative Elements */}
-                                <motion.div
-                                    animate={{
-                                        rotate: [0, 360]
-                                    }}
-                                    transition={{
-                                        duration: 20,
-                                        repeat: Infinity,
-                                        ease: "linear"
-                                    }}
-                                    className="absolute -inset-2 border border-white/10 rounded-2xl"
-                                />
-                                <motion.div
-                                    animate={{
-                                        rotate: [360, 0]
-                                    }}
-                                    transition={{
-                                        duration: 25,
-                                        repeat: Infinity,
-                                        ease: "linear"
-                                    }}
-                                    className="absolute -inset-6 border border-white/5 rounded-2xl"
-                                />
-
-                                {/* Floating Accent Elements */}
-                                {[...Array(2)].map((_, i) => (
-                                    <motion.div
-                                        key={i}
-                                        className="absolute w-16 h-16 rounded-xl bg-gradient-to-t from-pink-500/5 via-red-400/5 to-yellow-500/5 
-                      backdrop-blur-sm border border-white/10"
-                                        style={{
-                                            top: `${30 + i * 40}%`,
-                                            right: `${-5 + i * 3}%`,
-                                        }}
-                                        animate={{
-                                            y: [-10, 10, -10],
-                                            rotate: [0, 5, 0],
-                                        }}
-                                        transition={{
-                                            duration: 4,
-                                            delay: i * 0.5,
-                                            repeat: Infinity,
-                                            repeatType: "reverse",
-                                        }}
-                                    />
-                                ))}
-                            </div>
-                        </motion.div>
                     </div>
                 </div>
             </main>

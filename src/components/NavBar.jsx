@@ -19,7 +19,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="lg:mt-4 relative">
+    <div className="lg:mt-4 relative z-50 h-fit">
       <nav className="bg-transparent backdrop-filter backdrop-blur-2xl shadow-xl rounded-full md:mx-10 lg:mx-32 flex-wrap bricolage-font">
         <div className="container mx-auto flex justify-between items-center p-2">
           <div className="flex items-center space-x-44 lg:hidden text-white brandy-font text-2xl">
