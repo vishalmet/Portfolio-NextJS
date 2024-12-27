@@ -26,6 +26,25 @@ npx tailwindcss init -p
 @tailwind utilities;
 ```
 
+tailwind.config.js for vite react
+```bash
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      backgroundImage: {
+        'radial': 'radial-gradient(circle, var(--tw-gradient-stops))',
+      },
+    },
+  },
+  plugins: [],
+}
+```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
