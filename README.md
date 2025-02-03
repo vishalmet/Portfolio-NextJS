@@ -66,6 +66,33 @@ export default {
 }
 ```
 
+Tailwind config based on new vite version
+
+Install tailwind
+```
+npm install tailwindcss @tailwindcss/vite
+```
+
+vite.congif.js/ts
+```
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react(),tailwindcss()],
+})
+```
+
+index.css
+```
+@import "tailwindcss";
+```
+
+
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
